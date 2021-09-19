@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@media (min-width: 545px) {
+  html, body {
+    height: 100%;
+  }
+}
+body {
+  background: url("https://i.ibb.co/f0sL4rx/t-l-chargement.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+body h1 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin: 10px 25px;
+  text-align: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+}
+div .container-divided {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 900px;
+  max-width: 95%;
+  height: fit-content;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+div .container-divided textarea {
+  margin: 0 0 50px 0;
+  background: #eaeaea;
+  color: black;
+  display: block;
+  padding: 14px 10px;
+  outline: none;
+  border-radius: 4px;
+  width: 300px;
+  max-width: 95%;
+  height: 250px;
+  text-align: left;
+  resize: vertical;
+  text-indent: 10px;
+  border: none;
+  font-size: 15px;
+}
+div .container-divided textarea::-moz-selection {
+  color: inherit;
+  background-color: rgba(118, 199, 239, 0.54);
+}
+div .container-divided textarea::selection {
+  color: inherit;
+  background-color: rgba(118, 199, 239, 0.54);
+}
+
+input {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+input::placeholder {
+  color: #fff;
+}
+input::-moz-placeholder {
+  color: #fff;
+}
+input:-ms-input-placeholder {
+  color: #fff;
+}
+
+canvas {
+  width: 200px;
+  height: 200px;
+}
